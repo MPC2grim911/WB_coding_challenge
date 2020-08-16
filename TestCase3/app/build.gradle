@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.testcase3"
+        minSdkVersion 24 //test device sdk number
+        targetSdkVersion 28 //Note: changed from download default of 30 to fit criteria
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation files('libs/annotations-13.0.jar')
+    implementation files('libs/async-http-client-2.12.1.jar')
+    implementation files('libs/async-http-client-netty-utils-2.12.1.jar')
+    implementation files('libs/auto-common-0.10.jar')
+    implementation files('libs/auto-service-1.0-rc6.jar')
+    implementation files('libs/auto-service-annotations-1.0-rc6.jar')
+    implementation files('libs/byte-buddy-1.10.9.jar')
+    implementation files('libs/checker-qual-2.11.1.jar')
+    implementation files('libs/commons-exec-1.3.jar')
+    implementation files('libs/error_prone_annotations-2.3.4.jar')
+    implementation files('libs/failureaccess-1.0.1.jar')
+    implementation files('libs/grpc-context-1.28.0.jar')
+    implementation files('libs/guava-29.0-jre.jar')
+    implementation files('libs/j2objc-annotations-1.3.jar')
+    implementation files('libs/javax.activation-1.2.0.jar')
+    implementation files('libs/jsr305-3.0.2.jar')
+    implementation files('libs/kotlin-stdlib-1.3.70.jar')
+    implementation files('libs/netty-buffer-4.1.49.Final.jar')
+    implementation files('libs/netty-codec-4.1.49.Final.jar')
+    implementation files('libs/netty-codec-http2-4.1.49.Final.jar')
+    implementation files('libs/netty-codec-http-4.1.49.Final.jar')
+    implementation files('libs/netty-codec-socks-4.1.49.Final.jar')
+    implementation files('libs/netty-common-4.1.49.Final.jar')
+    implementation files('libs/netty-handler-4.1.49.Final.jar')
+    implementation files('libs/netty-handler-proxy-4.1.49.Final.jar')
+    implementation files('libs/netty-reactive-streams-2.0.4.jar')
+    implementation files('libs/netty-resolver-4.1.49.Final.jar')
+    implementation files('libs/netty-transport-4.1.49.Final.jar')
+    implementation files('libs/netty-transport-native-epoll-4.1.49.Final.jar')
+    implementation files('libs/netty-transport-native-epoll-4.1.49.Final (2).jar')
+    implementation files('libs/netty-transport-native-kqueue-4.1.49.Final.jar')
+    implementation files('libs/netty-transport-native-kqueue-4.1.49.Final (2).jar')
+    implementation files('libs/netty-transport-native-unix-common-4.1.49.Final.jar')
+    implementation files('libs/okhttp-4.5.0.jar')
+    implementation files('libs/okio-2.6.0.jar')
+    implementation files('libs/opentelemetry-api-0.4.0.jar')
+    implementation files('libs/opentelemetry-context-prop-0.4.0.jar')
+    implementation files('libs/opentelemetry-sdk-0.4.0.jar')
+    implementation files('libs/reactive-streams-1.0.3.jar')
+    implementation files('libs/reactor-core-3.3.5.RELEASE.jar')
+    implementation files('libs/reactor-netty-0.9.6.RELEASE.jar')
+    implementation files('libs/selenium-api-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-api-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-chrome-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-chrome-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-chromium-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-chromium-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-devtools-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-devtools-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-edge-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-edge-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-edgehtml-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-edgehtml-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-firefox-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-firefox-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-firefox-xpi-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-firefox-xpi-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-http-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-http-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-ie-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-ie-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-java-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-java-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-json-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-json-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-opera-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-opera-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-remote-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-remote-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-safari-driver-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-safari-driver-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/selenium-support-4.0.0-alpha-6.jar')
+    implementation files('libs/selenium-support-4.0.0-alpha-6-sources.jar')
+    implementation files('libs/slf4j-api-1.7.30.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}
