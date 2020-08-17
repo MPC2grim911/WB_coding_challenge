@@ -139,43 +139,81 @@ Bonus - TestCase 3: Implement Selenium Page Object Model
       in search results. App UI displays search result contents 
       and boolean result.
 
-   - Note: TestCase Incomplete  
-          
-   Status:
+   - Note: TestCase (potentially) incomplete
 
-     * FireFox - Mostly Complete (test and debug code logic)
-     * Chrome - Incomplete   
-     * UI -  Complete    (set to test, debug, and refine)
+        - there are two versions of this project
+           * Android Studio
+           * Python
 
+           
+   (ver.) Android Studio  
+     
+       Status:
 
-    (Intended) UI Instructions:
-
-        * Choosing a button will launch instantiate Selenium
-          for respective FireFox and Chrome browsers
-
-        * Wait time of 30 seconds to display/update results
-
-               - Contents shown are search results and 
-                 boolean assertion
+         * FireFox - Mostly Complete (test and debug code logic)
+         * Chrome - Incomplete   
+         * UI -  Complete    (set to test, debug, and refine)
 
 
-    (Potential) Warnings:
+       (Intended) UI Instructions:
 
-       * Different FireFox versions may have different content 
-         names for Google's javascript html className and id 
+             * Choosing a button will launch instantiate Selenium
+               for respective FireFox and Chrome browsers
 
-       * Coding method for FireFox search might not be 
-         requested Selenium page object model format 
+             * Wait time of 30 seconds to display/update results
+
+                    - Contents shown are search results and 
+                      boolean assertion
+
+
+       (Potential) Warnings:
+
+          * html className and ids might be wrong 
+
+          * Coding method for FireFox search might not be 
+            requested Selenium page object model format 
        
-       * See project FIXME notes for additional warnings
+          * See project FIXME notes for additional warnings
 
    
-    Future Progress Notes:
+       Future Progress Notes:
 
-	- Personal study and research into Selenium coding 
-          concept and how Appium is utilized for a better
-          understanding before further attempts 
+          - Personal study and research into Selenium coding 
+            concept and how Appium is utilized in Android Studio
+            for a better understanding before further attempts
 
-        - See project code FIXME's for additional notes 
-          and developments
+          - See project code FIXME's for additional notes 
+            and developments
 
+
+
+   (ver.) Python 
+     
+       Status:
+
+         * FireFox - Incomplete
+         * Chrome - Potentially complete  (test and debug) 
+
+
+      Instructions:
+
+          * Run Python code(s)
+          
+
+      Warnings:
+
+         * Firefox Selenium webdriver may not work
+
+         * Chrome Selenium webdriver should potentially work
+
+         * Make sure that python selenium webdrivers have their
+           json files
+
+
+      Future Progress Notes:
+
+          - Personal study and research into Selenium coding 
+            for firefox webdriver
+
+          - See project code FIXME's for additional notes 
+        

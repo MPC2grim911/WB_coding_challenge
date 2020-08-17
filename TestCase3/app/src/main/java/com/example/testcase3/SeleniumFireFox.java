@@ -34,7 +34,7 @@ public class SeleniumFireFox {
     private final static String check = "Tenet is an upcoming spy film written, produced, and directed by Christopher Nolan. It is a co-production between the United Kingdom and United States, and stars John David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine, and Kenneth Branagh.";
 
     //change these two as needed //FIXME: change might be needed for this section
-    private final static String webEname = "f"; //id name of search function on current google homepage html
+    private final static String webEname = "q"; //id name of search function on current google homepage html
     private final static String webDesc = "kno-rdesc"; //class name of text with plot on google search html
 
     public static String res; //return results

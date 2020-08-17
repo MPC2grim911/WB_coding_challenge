@@ -29,7 +29,7 @@ public class SeleniumChrome {
     public static boolean searchResult;
 
     //FIXME: verify and modify all of below
-    private final static String webEname = "f"; //change these two as needed
+    private final static String webEname = "q"; //change these two as needed
     private final static String webDesc = "kno-rdesc";
 
 
