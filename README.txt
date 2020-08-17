@@ -197,7 +197,9 @@ Bonus - TestCase 3: Implement Selenium Page Object Model
 
       Instructions:
 
-          * Run Python code(s)
+          * change PATH names to appropriate webdriver exe 
+	  
+	  * Run Python code(s)
           
 
       Warnings:
