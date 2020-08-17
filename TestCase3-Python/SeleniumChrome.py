@@ -1,6 +1,5 @@
 #Selenium Chrome
 
-#chrome doesn't work on testing laptop
 #should work on a device that has chrome
 
 #FIXME: may have typos
